@@ -159,7 +159,7 @@ a.active, a:active, a:focus, a:hover {
     }
 }
 header {
-    background-image: url(../img/header-bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/header-bg.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
