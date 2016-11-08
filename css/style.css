@@ -1,9 +1,4 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
+
 html, body{
     font-size: 100%;
   font-family: 'Open Sans', sans-serif;
@@ -126,6 +121,7 @@ body a:hover{
     -ms-background-size: cover;
     min-height: 715px;
     position: relative;
+    background-color: #2b2b2b;
 }
 .banner {
        margin: 0 auto;
@@ -422,6 +418,7 @@ h3.w3l_head.three {
   background-size: cover;
   background-position-x: -50px;
   margin-top: 10px;
+  background-color: #1b2936;
 }
 p.portfolio_head_para {
     color: #00d19c;
