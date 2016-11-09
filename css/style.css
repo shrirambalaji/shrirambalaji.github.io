@@ -922,7 +922,6 @@ p.counter {
   text-align: justify;
   padding-top:25px;
   padding-bottom: 25px;
-  padding-left: 10px;
   font-family:'Raleway',sans-serif;
   font-weight: 600;
 }
@@ -1282,21 +1281,27 @@ p.counter {
     margin: 0 10px;
     padding: 16px 10px;
   }
+
+
   .w3l_footer_pos {
     margin-top: 2em;
   }
   .agile_count_grid h5 {
       font-size: 1.5em;
   }
-  education-agile-w3l-info {
+  .education-agile-w3l-info {
     /* float: right; */
     /* display: inline-block; */
     padding-left: 150px;
 }
-education-agile-w3l-info>h4 {
+.education-agile-w3l-info>h4 {
     /* float: right; */
     /* display: inline-block; */
     font-size:1.2em;
+}
+
+.project-desc {
+	padding-left: 10px;
 }
 
 						  .education-info{
