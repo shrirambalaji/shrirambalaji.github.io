@@ -920,7 +920,8 @@ p.counter {
   font-size: 20px;
   color: black;
   text-align: justify;
-  padding:50px;
+  padding-top:25px;
+  padding-bottom: 25px;
   font-family:'Raleway',sans-serif;
   font-weight: 600;
 }
@@ -1226,7 +1227,7 @@ p.counter {
     float: none;
     margin: 0;
     text-align: center;
-    background: #0c0c0c;
+    background: #000;
   }
   .navbar-nav > li:nth-child(3) a {
     margin-right: auto !important;
