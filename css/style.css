@@ -1534,8 +1534,7 @@ p.counter {
 }
 @media (max-width: 384px){
   .banner img {
-    border: 5px solid #0effc2;
-    width: 38%;
+     width: 38%;
   }
   .abt-gd-left.text-center {
     float: left;
@@ -1624,8 +1623,7 @@ p.counter {
     font-size: 12px !important;
   }
   .banner img {
-    border: 5px solid #0effc2;
-    width: 38%;
+     width: 38%;
   }
   .banner {
     padding-top: 2em;
@@ -1662,7 +1660,6 @@ p.counter {
   }
   
   .banner img {
-    border: 5px solid #0effc2;
-    width: 45%;
+     width: 45%;
   }
 }
