@@ -1217,7 +1217,7 @@ p.counter {
   }
   .list-gds {
     float: left;
-    width: 33%;
+    width: 100%;
     padding: 0;
   }
   .list-gds p {
@@ -1700,8 +1700,7 @@ p.counter {
   }
   .banner h2 {
     font-size: 2.3em;
-    letter-spacing: 4px;
-  }
+    }
   .banner span {
     letter-spacing: 2px;
     font-size: 0.83em;
@@ -1717,6 +1716,8 @@ p.counter {
     line-height: 35px;
     font-size: 1.4em;
   }
+
+
   p.portfolio_head_para {
     color: #16d2a2;
     letter-spacing:4px;
