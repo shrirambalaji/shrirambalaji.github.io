@@ -1,12 +1,15 @@
-import React from 'react'
-import ExperienceSection from '../components/ExperienceSection'
-import ProjectsSection from '../components/ProjectsSection'
-import About from '../components/Sidebar/About'
-import Links from '../components/Sidebar/Links'
-import 'circular-std';
-import './style.scss'
+import React from "react";
+import ExperienceSection from "../components/ExperienceSection";
+import ProjectsSection from "../components/ProjectsSection";
+import About from "../components/Sidebar/About";
+import Links from "../components/Sidebar/Links";
+import Layout from "../components/layout";
 
-const IndexPage = () => (
+import "circular-std";
+import "./style.scss";
+
+const App = props => (
+  <Layout location={props.location}>
     <div className="index">
       <div className="main">
         <h1 className="intro">
@@ -14,8 +17,7 @@ const IndexPage = () => (
         </h1>
 
         <h3 className="bold">
-          Software Engineer building products
-          for the web using JavaScript.
+          Software Engineer building tools for humans.
         </h3>
 
         <ExperienceSection />
@@ -31,6 +33,7 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-)
+  </Layout>
+);
 
-export default IndexPage
+export default App;
