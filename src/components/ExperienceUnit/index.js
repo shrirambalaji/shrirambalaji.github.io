@@ -1,32 +1,15 @@
-import React, { Component } from 'react'
+import React from "react";
+import "./style.scss";
 
-import './style.scss'
 
-class ExperienceUnit extends Component {
-  render() {
-    return (
-      <div className="experience-unit col-md">
-        <a href={this.props.link} target="_blank">
-          <div
-            className="image"
-            style={{
-              backgroundImage: `url(${this.props.logo})`,
-              backgroundColor: this.props.colour
-            }}>
-          </div>
-        </a>
-        <div className="title bold">
-          {this.props.title}
-        </div>
-        <div className="time-period">
-          {this.props.timeperiod}
-        </div>
-        <div className="subtitle">
-          {this.props.subtitle}
-        </div>
-      </div>
-    )
-  }
-}
+const ExperienceUnit = props => {
+  return (
+    <div className="experience-unit col-md">
+      <div className="title bold">{props.title}</div>
+      <div className="time-period">{props.timeperiod}</div>
+      <div className="subtitle">{props.subtitle}</div>
+    </div>
+  );
+};
 
-export default ExperienceUnit
+export default ExperienceUnit;
