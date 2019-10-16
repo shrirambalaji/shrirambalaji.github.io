@@ -2,26 +2,22 @@
 
 $max-width: 230px;
 $margin-bottom: 40px;
+$margin-top: 40px;
 
 .about {
   color: $grey-color-light;
 
   .image {
-    width: 180px;
+    width: 200px;
+    margin: 0 auto;
     max-width: $max-width;
-    height: 180px;
+    height: 200px;
     background-size: cover;
     background-image: url(../../../assets/images/avatar.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     border-radius: 50%;
     overflow: hidden;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%); /* For Webkit browsers */
-    filter: gray; /* For IE 6 - 9 */
-    transition: all .6s ease;
-    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
-    margin-bottom: $margin-bottom;
 
     &:hover {
       filter: grayscale(0%);
@@ -30,6 +26,7 @@ $margin-bottom: 40px;
   }
 
   .bio {
+    margin-top: $margin-top;
     margin-bottom: $margin-bottom;
     max-width: $max-width;
     line-height: 2.8rem;
