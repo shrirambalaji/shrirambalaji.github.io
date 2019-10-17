@@ -1,4 +1,4 @@
-@import '../../../assets/scss/main.scss';
+@import "../../../assets/scss/main.scss";
 
 $max-width: 230px;
 $margin-bottom: 40px;
@@ -8,21 +8,17 @@ $margin-top: 40px;
   color: $grey-color-light;
 
   .image {
-    width: 200px;
+    width: 150px;
+    height: 150px;
     margin: 0 auto;
     max-width: $max-width;
-    height: 200px;
     background-size: cover;
-    background-image: url(../../../assets/images/avatar.jpg);
+    background-color: $light-blue;
+    background-image: url(../../../assets/images/avatar.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: -5px 20px;
     border-radius: 50%;
     overflow: hidden;
-
-    &:hover {
-      filter: grayscale(0%);
-      -webkit-filter: grayscale(0%);
-    }
   }
 
   .bio {
@@ -32,7 +28,7 @@ $margin-top: 40px;
     line-height: 2.8rem;
     font-size: 1.75rem;
     text-align: center;
-    color: "#FFF";
+    color: $primary-text-color;
 
     .emoji {
       font-size: 1.6rem;
@@ -44,18 +40,18 @@ $margin-top: 40px;
     }
   }
 
-  @include media('>small', '<=medium') {
+  @include media(">small", "<=medium") {
     .bio {
       .emoji {
-        font-size: 2.0rem;
+        font-size: 2rem;
         padding-top: 10px;
       }
     }
   }
 
-  @include media('<=small') {
+  @include media("<=small") {
     .bio {
-      line-height: 2.0rem;
+      line-height: 2rem;
       font-size: 1.4rem;
 
       .emoji {
@@ -65,7 +61,7 @@ $margin-top: 40px;
     }
   }
 
-  @include media('<=medium') {
+  @include media("<=medium") {
     text-align: center;
     margin-bottom: 0px;
 
