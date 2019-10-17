@@ -33,5 +33,6 @@ module.exports = {
     description: "Software Engineer",
     keywords:
       "full stack, product enginner, software engineer, developer, cisco, netapp, portfolio, personal website",
+    url: "https://shriram-balaji.github.io"
   }
 };
