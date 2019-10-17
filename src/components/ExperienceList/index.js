@@ -32,8 +32,9 @@ const ExperienceList = () => {
           <Section title="Experience" className="experience">
             <div className="row">
               {experienceContents.map(
-                ({ company, description, duration, link }) => (
+                ({ company, description, duration, link }, index) => (
                   <SectionItem
+                    key={index}
                     type="experience"
                     link={link}
                     title={company}

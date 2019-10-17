@@ -24,16 +24,14 @@ const About = () => {
               }
             `}
             render={data => {
-              const {
-                misc,
-                bio
-              } = data.allMarkdownRemark.nodes[0].frontmatter;
+              const { misc, bio } = data.allMarkdownRemark.nodes[0].frontmatter;
               const { emojis } = misc[0];
               return (
                 <Fragment>
                   <p>{bio}</p>
-                  {emojis.map(emoji => (
+                  {emojis.map((emoji, emojiIdx) => (
                     <span
+                      key={emojiIdx}
                       className="emoji"
                       role="img"
                       aria-label="sidelink-emoji"
