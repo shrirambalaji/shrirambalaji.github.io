@@ -1,27 +1,34 @@
 import React from "react";
-import ExperienceSection from "../components/ExperienceSection";
-import ProjectsSection from "../components/ProjectsSection";
+import ExperienceList from "../components/ExperienceList";
+import ProjectsList from "../components/ProjectsList";
 import About from "../components/Sidebar/About";
 import Links from "../components/Sidebar/Links";
 import Layout from "../components/layout";
 
-import "circular-std";
+import "typeface-inter";
 import "./style.scss";
+
+document.documentElement.setAttribute("data-browser", navigator.userAgent);
 
 const App = props => (
   <Layout location={props.location}>
-    <div className="index">
+    <div>
       <div className="main">
-        <h1 className="intro">
-          Hello 👋 , I'm <span className="bold"> Shriram Balaji</span>
-        </h1>
-
-        <h3 className="bold">
+        <h2 className="intro">
+          <span>Hi!&nbsp;</span>
+          <span>
+            I'm
+            <strong className="bold"> Shriram Balaji </strong>
+          </span>
+          <span role="img" aria-label="hand-wave-emoji">
+            &nbsp;👋&nbsp;
+          </span>
+        </h2>
+        <h4 className="bold summary">
           Software Engineer building tools for humans.
-        </h3>
-
-        <ExperienceSection />
-        <ProjectsSection />
+        </h4>
+        <ExperienceList />
+        <ProjectsList />
       </div>
 
       <div className="aside">
