@@ -1,0 +1,49 @@
+@import "../../assets/scss/main.scss";
+@import "./card.scss";
+
+.section-item {
+  .title {
+    padding-top: 8px;
+    font-size: 2.6rem;
+  }
+
+  .duration {
+    margin: 0;
+    font-size: 15px;
+    color: rgb(149, 146, 160);
+  }
+
+  .subtitle {
+    color: $primary-text-color;
+    font-size: 1.7rem;
+    line-height: 1.75em;
+  }
+
+  @include media(">=medium", "<large") {
+    .image {
+      height: 110px;
+    }
+  }
+
+  @include media("<=medium", ">xsmall") {
+    padding-bottom: 15px;
+
+    .image {
+      height: 140px;
+    }
+  }
+
+  @include media("<=xsmall") {
+    padding-bottom: 15px;
+
+    .image {
+      height: 160px;
+    }
+  }
+}
+
+// .project {
+//   @include media(">=medium") {
+//     max-width: 333px !important;
+//   }
+// }
