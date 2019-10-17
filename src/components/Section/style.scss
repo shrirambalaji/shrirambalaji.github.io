@@ -1,12 +1,24 @@
-@import '../../assets/scss/main.scss';
+@import "../../assets/scss/main.scss";
 
 .section {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 55px;
 
   h6 {
     font-size: 2rem;
     padding-bottom: 5px;
     margin-bottom: 10px;
   }
+}
+
+.section-units {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.section-title {
+  padding-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: $secondary-text-color;
+  font-weight: 500;
 }
