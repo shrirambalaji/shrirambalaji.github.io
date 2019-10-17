@@ -7,3 +7,11 @@ $breakpoints: (
   large: 1280px,
   xlarge: 1800px
 );
+
+@mixin browser($browsers: Mozilla) {
+  @each $browser in $browsers {
+    html[data-browser*="#{$browser}"] & {
+      @content;
+    }
+  }
+}
