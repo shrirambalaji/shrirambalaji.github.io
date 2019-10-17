@@ -1,10 +1,23 @@
-@import '../assets/scss/main.scss';
+@import "../assets/scss/main.scss";
 
 $vertical-padding: 50px;
 $horizontal-padding: 64px;
 $main-width: 65%;
 $main-margin-right: 35%;
 $aside-width: 35%;
+
+.intro {
+  line-height: 1.5em;
+}
+
+.summary {
+  font-weight: 500;
+  letter-spacing: 0.0015em;
+  margin-top: 5px;
+  color: $secondary-text-color;
+  margin-bottom: 50px;
+  line-height: 1.5em;
+}
 
 .main {
   margin: 0 auto;
@@ -13,54 +26,56 @@ $aside-width: 35%;
     font-size: 3.4rem;
     line-height: 1.6;
 
-    @include media('<=xsmall') {
+    @include media("<=xsmall") {
       font-size: 2.8rem;
     }
 
-    @include media('>=medium', '<large') {
+    @include media(">=medium", "<large") {
       font-size: 3rem;
     }
   }
 
   // Setting the width andpadding sizes
-  @include media('>=large') {
+  @include media(">=large") {
     $main-width: 65%;
     $main-margin-right: 35%;
     $vertical-padding: 50px;
-    $horizontal-padding: 8%;
+    $horizontal-padding: 5%;
 
     width: $main-width;
-    margin-right: $main-margin-right; 
-    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+    margin-right: $main-margin-right;
+    padding: $vertical-padding $horizontal-padding $vertical-padding
+      $horizontal-padding;
   }
-  @include media('>=medium', '<large') {
+  @include media(">=medium", "<large") {
     $main-width: 70%;
     $main-margin-right: 30%;
     $vertical-padding: 50px;
     $horizontal-padding: 8%;
 
     width: $main-width;
-    margin-right: $main-margin-right; 
-    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+    margin-right: $main-margin-right;
+    padding: $vertical-padding $horizontal-padding $vertical-padding
+      $horizontal-padding;
   }
-  @include media('>xsmall', '<medium') {
+  @include media(">xsmall", "<medium") {
     $main-width: 100%;
     $main-margin-right: 0;
     $vertical-padding: 50px;
     $horizontal-padding: 48px;
 
     width: $main-width;
-    margin-right: $main-margin-right; 
+    margin-right: $main-margin-right;
     padding: $vertical-padding $horizontal-padding 0 $horizontal-padding;
   }
-  @include media('<=xsmall') {
+  @include media("<=xsmall") {
     $main-width: 100%;
     $main-margin-right: 0;
     $vertical-padding: 50px;
     $horizontal-padding: 24px;
 
     width: $main-width;
-    margin-right: $main-margin-right; 
+    margin-right: $main-margin-right;
     padding: $vertical-padding $horizontal-padding 0 $horizontal-padding;
   }
 }
@@ -68,12 +83,12 @@ $aside-width: 35%;
 .aside {
   align-self: stretch;
   margin: 0 auto;
-  background-color: rgb(24, 23, 29);
+  background-color: rgb(23, 23, 26);
   color: white;
 
   // Positioning on the side for
   // bigger screens
-  @include media('>=medium') {
+  @include media(">=medium") {
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -94,42 +109,45 @@ $aside-width: 35%;
 
   // Positioning at the bottom for
   // smaller screens
-  @include media('<medium') {
+  @include media("<medium") {
     position: relative;
     text-align: center;
     right: auto;
     top: auto;
     display: block;
-    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+    padding: $vertical-padding $horizontal-padding $vertical-padding
+      $horizontal-padding;
 
     .bottom {
       padding: $vertical-padding $horizontal-padding 0 $horizontal-padding;
     }
   }
 
-
-  @include media('>=medium') {
-    $aside-width: 20%;
-    $vertical-padding: 75px;
-    $horizontal-padding: 0px;
+  @include media(">=medium") {
+    $aside-width: 25%;
+    $vertical-padding: 25px;
+    $horizontal-padding: 20px;
 
     width: $aside-width;
-    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+    padding: $vertical-padding $horizontal-padding $vertical-padding
+      $horizontal-padding;
   }
-  @include media('>xsmall', '<medium') {
+  @include media(">xsmall", "<medium") {
     $aside-width: 100%;
     $vertical-padding: 50px;
     $horizontal-padding: 48px;
 
     width: $aside-width;
-    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+    padding: $vertical-padding $horizontal-padding $vertical-padding
+      $horizontal-padding;
   }
-  @include media('<=xsmall') {
+  @include media("<=xsmall") {
     $aside-width: 100%;
     $vertical-padding: 50px;
     $horizontal-padding: 24px;
 
     width: $aside-width;
-    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+    padding: $vertical-padding $horizontal-padding $vertical-padding
+      $horizontal-padding;
   }
 }
