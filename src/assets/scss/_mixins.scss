@@ -10,7 +10,7 @@ $breakpoints: (
 
 @mixin browser($browsers: Mozilla) {
   @each $browser in $browsers {
-    html[data-browser*="#{$browser}"] & {
+    div.root[data-browser*="#{$browser}"] & {
       @content;
     }
   }
