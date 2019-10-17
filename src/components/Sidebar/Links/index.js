@@ -46,7 +46,7 @@ class Links extends Component {
           </li>
         </ul>
         <div className="small bold">
-          <p>s
+          <p>
             Built with <span role="img" aria-label="heart-emoji">️❤</span> using&nbsp;
             <a
               href="https://www.gatsbyjs.org/"
