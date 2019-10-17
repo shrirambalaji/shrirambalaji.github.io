@@ -8,11 +8,9 @@ import Layout from "../components/layout";
 import "typeface-inter";
 import "./style.scss";
 
-document.documentElement.setAttribute("data-browser", navigator.userAgent);
-
 const App = props => (
   <Layout location={props.location}>
-    <div>
+    <div className="page">
       <div className="main">
         <h2 className="intro">
           <span>Hi!&nbsp;</span>
