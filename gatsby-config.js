@@ -9,6 +9,23 @@ module.exports = {
         }
         // fonts: [`space mono\:300, 500, 600, 900`]
       }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "markdown-pages",
+        path: `${__dirname}/src/markdown-pages`
+      }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-twemoji-shortcut`
+          }
+        ]
+      }
     }
   ],
   siteMetadata: {
@@ -16,20 +33,5 @@ module.exports = {
     description: "Software Engineer",
     keywords:
       "full stack, product enginner, software engineer, developer, cisco, netapp, portfolio, personal website",
-    url: "https://www.shriram-balaji.github.io",
-    experience: [
-      {
-        company: "NetApp",
-        duration: "Oct 2018 - Present",
-        description:
-          "Built web applications and microservices tailored towards designing and sizing NetApp Storage Solutions."
-      },
-      {
-        company: "Cisco",
-        duration: "June 2017 - Oct 2018",
-        description:
-          "Built scalable microservice architectures and reliable Message Queueing Systems as part of the Engineering Team in Team-One a cloud based messaging tool, now part of WebEx."
-      }
-    ]
   }
 };
