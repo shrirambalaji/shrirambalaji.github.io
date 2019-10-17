@@ -14,13 +14,15 @@ const App = props => (
       <div className="main">
         <h2 className="intro">
           <span>Hi!&nbsp;</span>
-          <span>
-            I'm
-            <strong className="bold"> Shriram Balaji </strong>
-          </span>
-          <span role="img" aria-label="hand-wave-emoji">
-            &nbsp;👋&nbsp;
-          </span>
+          <div className="greeting">
+            <span>
+              I'm
+              <strong className="bold"> Shriram Balaji </strong>
+            </span>
+            <span role="img" aria-label="hand-wave-emoji">
+              &nbsp;👋&nbsp;
+            </span>
+          </div>
         </h2>
         <h4 className="bold summary">
           Software Engineer building tools for humans.
