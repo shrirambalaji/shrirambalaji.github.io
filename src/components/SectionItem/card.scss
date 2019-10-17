@@ -1,0 +1,27 @@
+.card {
+  padding: 25px !important;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  background: $card-bg-color;
+  transition: transform 0.2s ease, border-bottom 0.2s ease;
+
+  &:hover,
+  &:active {
+    cursor: pointer;
+    transform: translateY(-1%);
+    background: $card-bg-hover-color;
+  }
+
+  @include media(">=medium") {
+    margin-right: 20px;
+    min-width: 430px;
+
+    @include browser(Mozilla) {
+      min-width: 333px;
+    }
+
+    @include browser(Chrome) {
+      min-width: 380px;
+    }
+  }
+}
