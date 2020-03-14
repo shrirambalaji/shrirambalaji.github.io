@@ -10,12 +10,15 @@ experience:
     description: Built scalable microservice architectures and reliable Message Queueing Systems as part of the Engineering Team in Team-One a cloud based messaging tool, now part of WebEx.
     link: https://cisco.com
 
-bio: Software Engineer ∙ Open Sourcerer ∙ Tech Enthusiast
+about:
+  bio:
+    - Software Engineer
+    - Open Sourcerer
+    - Tech Enthusiast
 
-misc:  
-  - emojis: 
-    - 👨🏽‍💻 
-    - 🤩 
+  emojis:
+    - 👨🏽‍💻
+    - 🤩
     - 🤖
 
 projects:
@@ -44,10 +47,9 @@ projects:
     link: https://github.com/snift
     name: snift
     wip: true
-    tags: 
+    tags:
       - golang
       - security
-
 
   - title: Domain Hunt
     duration: 2018
@@ -64,7 +66,6 @@ projects:
     name: man-made
     tags:
       - node.js
-
 
   - title: Pymobile-analytics
     duration: 2017
