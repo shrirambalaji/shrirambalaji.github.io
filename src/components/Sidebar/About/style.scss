@@ -13,11 +13,12 @@ $margin-top: 40px;
     margin: 0 auto;
     max-width: $max-width;
     background-size: cover;
-    background-color: $light-blue;
-    background-image: url(../../../assets/images/avatar.png);
+    background-color: #f7f5e3;
+    background-image: url(../../../assets/images/avatar.jpg);
     background-repeat: no-repeat;
-    background-position: -5px 20px;
+    background-position: 0px 20px;
     border-radius: 50%;
+    border: 2px solid $dark-theme-bg-color;
     overflow: hidden;
   }
 
@@ -71,6 +72,7 @@ $margin-top: 40px;
 
     .bio {
       margin: 0 auto;
+      line-height: 2em;
     }
   }
 }
