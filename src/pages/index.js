@@ -4,6 +4,7 @@ import ProjectsList from "../components/ProjectsList";
 import About from "../components/Sidebar/About";
 import Links from "../components/Sidebar/Links";
 import Layout from "../components/layout";
+import emojiSupport from "detect-emoji-support";
 
 import "typeface-inter";
 import "./style.scss";
@@ -19,9 +20,11 @@ const App = props => (
               I'm
               <strong className="bold"> Shriram Balaji </strong>
             </span>
-            <span role="img" aria-label="hand-wave-emoji">
-              &nbsp;👋&nbsp;
-            </span>
+            {emojiSupport() && (
+              <span role="img" aria-label="hand-wave-emoji">
+                &nbsp;👋&nbsp;
+              </span>
+            )}
           </div>
         </h2>
         <h4 className="bold summary">
