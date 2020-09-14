@@ -3,7 +3,6 @@ import React from "react";
 import Section from "../Section";
 import SectionItem from "../SectionItem";
 
-// TODO: Add Open Source Contributions Section
 const ProjectsList = () => {
   return (
     <Section title="Projects">
@@ -44,7 +43,7 @@ const ProjectsList = () => {
                     title={title}
                     link={link}
                     timeperiod={duration}
-                    subtitle={description}
+                    content={description}
                   />
                 );
               }

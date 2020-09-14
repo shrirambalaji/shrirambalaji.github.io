@@ -39,7 +39,7 @@ const ExperienceList = () => {
                     link={link}
                     title={company}
                     timeperiod={duration}
-                    subtitle={description}
+                    content={description}
                   />
                 )
               )}
