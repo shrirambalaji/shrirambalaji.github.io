@@ -2,7 +2,7 @@
 experience:
   - company: NetApp
     duration: Oct 2018 - Present
-    description: Built web applications and microservices tailored towards designing and sizing NetApp Storage Solutions.
+    description: Built Docgen, a novel documentation orchestrator to publish a Gatsby Static Documentation Site for NetApp APIs with a CLI interface. Also built and optimized web applications, microservices tailored towards designing and sizing NetApp Storage Solutions.
     link: https://netapp.com
 
   - company: Cisco
@@ -33,7 +33,7 @@ projects:
 
   - title: Cast Bucket
     duration: 2019
-    description: An open source, cross-platform podcast app for developers.
+    description: A Universal React Native Experiment as a podcast app for developers.
     link: https://github.com/cast-bucket/cast-bucket
     name: cast-bucket
     wip: true
@@ -43,7 +43,7 @@ projects:
 
   - title: Snift
     duration: 2019
-    description: An open source tool to identify common security issues on the web.
+    description: An open source browser extension to identify common security issues on the web.
     link: https://github.com/snift
     name: snift
     wip: true
@@ -74,4 +74,26 @@ projects:
     name: pymobile-analytics
     tags:
       - python
+
+oss:
+  - title: Excalidraw
+    description: A virtual whiteboard for sketching hand-drawn like diagrams built by some core members of the React team. Core collaborator for the Excalidraw-Desktop App as well.
+    link: https://github.com/excalidraw
+    name: excalidraw
+    tags:
+      - oss
+
+  - title: Rollup.js
+    description: ​Helped migrate some legacy plugins to rollup.js module bundler monorepo.
+    link: https://github.com/rollup/plugins/commit/e3e1ebd89d6c300a193223fb79a7a1dc9a0a9622
+    name: rollup
+    tags:
+      - oss
+
+  - title: Widdershins
+    description: OpenAPI to Markdown converter. Fixed bugs for JSX compatibility.
+    link: https://github.com/mermade/widdershins
+    name: widdershins
+    tags:
+      - oss
 ---
