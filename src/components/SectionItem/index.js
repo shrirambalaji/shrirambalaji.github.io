@@ -1,14 +1,25 @@
 import React from "react";
 import "./style.scss";
 
-const redirectTo = link => window.open(link, "_blank");
+const redirectTo = (link) =>
+  window ? window.open(link, "_blank") : null;
 
-const SectionItem = ({ title, timeperiod, subtitle, link }) => {
+const SectionItem = ({
+  title,
+  timeperiod,
+  content,
+  link,
+}) => {
   return (
-    <div className="card section-item col-md" onClick={() => redirectTo(link)}>
+    <div
+      role="presentation"
+      className="card section-item col-md"
+      onClick={() => redirectTo(link)}
+      onKeyDown={() => redirectTo(link)}
+    >
       <div className="title bold">{title}</div>
       <p className="duration">{timeperiod}</p>
-      <p className="subtitle">{subtitle}</p>
+      <p className="content">{content}</p>
     </div>
   );
 };
