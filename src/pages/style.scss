@@ -2,8 +2,8 @@
 
 $vertical-padding: 50px;
 $horizontal-padding: 64px;
-$main-width: 65%;
-$main-margin-right: 35%;
+$main-width: 75%;
+$main-margin-right: 25%;
 $aside-width: 35%;
 
 .intro {
@@ -37,8 +37,8 @@ $aside-width: 35%;
 
   // Setting the width andpadding sizes
   @include media(">=large") {
-    $main-width: 65%;
-    $main-margin-right: 35%;
+    $main-width: 75%;
+    $main-margin-right: 25%;
     $vertical-padding: 50px;
     $horizontal-padding: 5%;
 
