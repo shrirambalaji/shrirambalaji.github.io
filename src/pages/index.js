@@ -18,9 +18,9 @@ const App = (props) => (
           <span>Hi!&nbsp;</span>
           <div className="greeting">
             <span>
-              I'm
+              I'm&nbsp;
               <strong className="bold">
-                Shriram Balaji{" "}
+                Shriram Balaji
               </strong>
             </span>
             {emojiSupport() && (
