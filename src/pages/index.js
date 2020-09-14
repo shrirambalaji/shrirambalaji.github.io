@@ -1,6 +1,7 @@
 import React from "react";
 import ExperienceList from "../components/ExperienceList";
 import ProjectsList from "../components/ProjectsList";
+import OssList from "../components/OssList";
 import About from "../components/Sidebar/About";
 import Links from "../components/Sidebar/Links";
 import Layout from "../components/layout";
@@ -9,7 +10,7 @@ import emojiSupport from "detect-emoji-support";
 import "typeface-inter";
 import "./style.scss";
 
-const App = props => (
+const App = (props) => (
   <Layout location={props.location}>
     <div className="page">
       <div className="main">
@@ -18,7 +19,9 @@ const App = props => (
           <div className="greeting">
             <span>
               I'm
-              <strong className="bold"> Shriram Balaji </strong>
+              <strong className="bold">
+                Shriram Balaji{" "}
+              </strong>
             </span>
             {emojiSupport() && (
               <span role="img" aria-label="hand-wave-emoji">
@@ -31,6 +34,7 @@ const App = props => (
           Software Engineer building tools for humans.
         </h4>
         <ExperienceList />
+        <OssList />
         <ProjectsList />
       </div>
 
