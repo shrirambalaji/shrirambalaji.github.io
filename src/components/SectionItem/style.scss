@@ -14,9 +14,9 @@
   }
 
   .content {
-    color: $primary-text-color;
+    color: $secondary-text-color;
     font-size: 1.7rem;
-    line-height: 1.75em;
+    line-height: 2em;
   }
 
   @include media(">=medium", "<large") {
