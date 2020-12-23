@@ -88,3 +88,17 @@ projects:
     tags:
       - android
       - java
+
+links:
+- type: blog
+  url: https://blog.shrirambalaji.dev
+- type: github
+  url: https://github.com/Shriram-Balaji
+- type: linkedin
+  url: https://linkedin.com/in/shrirambalaji
+- type: twitter
+  url: https://twitter.com/__shriram
+- type: mail
+  url: mailto:shrirambalaji1996@gmail.com
+- type: resume
+  url: /files/resume.pdf
