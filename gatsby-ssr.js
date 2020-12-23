@@ -22,10 +22,11 @@ exports.onRenderBody = (
     helmet.style.toComponent(),
   ]);
 
-  setPostBodyComponents([
-    <script
-      src="https://code.tidio.co/vbxlguzrm3eesqejfajl3tviriyig8td.js"
-      async
-    ></script>,
-  ]);
+  if (process.env.NODE_ENV !== "development")
+    setPostBodyComponents([
+      <script
+        src="https://code.tidio.co/vbxlguzrm3eesqejfajl3tviriyig8td.js"
+        async
+      ></script>,
+    ]);
 };
