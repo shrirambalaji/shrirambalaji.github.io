@@ -5,34 +5,36 @@ module.exports = {
       resolve: "gatsby-plugin-sass",
       options: {
         cssLoaderOptions: {
-          camelCase: false
-        }
-        // fonts: [`space mono\:300, 500, 600, 900`]
-      }
+          camelCase: false,
+        },
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: "markdown-pages",
-        path: `${__dirname}/src/markdown-pages`
-      }
+        name: "content",
+        path: `${__dirname}/content`,
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-twemoji-shortcut`
-          }
-        ]
-      }
-    }
+            resolve: `gatsby-remark-twemoji-shortcut`,
+          },
+        ],
+      },
+    },
   ],
   siteMetadata: {
     title: "Shriram Balaji",
-    description: "Software Engineer",
+    firstName: "Shriram",
+    lastName: "Balaji",
+    description:
+      "Software Engineer dabbling with things on the interwebs",
     keywords:
-      "full stack, product enginner, software engineer, developer, cisco, netapp, portfolio, personal website",
-    url: "https://shriram-balaji.github.io"
-  }
+      "full stack engineer,software engineer, developer, portfolio",
+    url: "https://shrirambalaji.dev",
+  },
 };
