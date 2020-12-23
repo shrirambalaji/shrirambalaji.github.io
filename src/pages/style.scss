@@ -83,9 +83,7 @@ $aside-width: 35%;
 .aside {
   align-self: stretch;
   margin: 0 auto;
-  background-color: rgb(23, 23, 26);
-  color: white;
-
+  background-color: $dark-theme-sidebar-bg-color;
   // Positioning on the side for
   // bigger screens
   @include media(">=medium") {

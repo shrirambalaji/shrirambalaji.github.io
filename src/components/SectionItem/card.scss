@@ -11,6 +11,7 @@
     cursor: pointer;
     transform: translateY(-5px);
     background: $card-bg-hover-color;
+    // border: 2px solid $accent;
   }
 
   @include media(">=medium") {
