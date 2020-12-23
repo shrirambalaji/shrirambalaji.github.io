@@ -3,7 +3,7 @@ import React from "react";
 import Section from "../Section";
 import SectionItem from "../SectionItem";
 
-const ProjectsList = () => {
+const Projects = () => {
   return (
     <Section title="Projects & Open Source">
       <div className="row">
@@ -55,4 +55,4 @@ const ProjectsList = () => {
   );
 };
 
-export default ProjectsList;
+export default Projects;

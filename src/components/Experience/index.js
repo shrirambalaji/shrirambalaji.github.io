@@ -3,7 +3,7 @@ import React from "react";
 import SectionItem from "../SectionItem";
 import Section from "../Section";
 
-const ExperienceList = () => {
+const Experience = () => {
   return (
     <StaticQuery
       query={graphql`
@@ -51,4 +51,4 @@ const ExperienceList = () => {
   );
 };
 
-export default ExperienceList;
+export default Experience;
