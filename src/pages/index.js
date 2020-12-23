@@ -2,6 +2,7 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Experience from "../components/Experience";
 import Projects from "../components/Projects";
+import Blogs from "../components/Blogs";
 import About from "../components/Sidebar/About";
 import Links from "../components/Sidebar/Links";
 import Layout from "../components/layout";
@@ -56,6 +57,7 @@ const App = (props) => {
                 </h4>
                 <Experience />
                 <Projects />
+                <Blogs />
               </div>
 
               <div className="aside">

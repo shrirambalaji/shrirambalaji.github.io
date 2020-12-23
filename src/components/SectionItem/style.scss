@@ -1,5 +1,6 @@
 @import "../../assets/scss/main.scss";
 @import "./card.scss";
+@import "./post.scss";
 
 .section-item {
   .title {
@@ -26,16 +27,12 @@
   }
 
   @include media("<=medium", ">xsmall") {
-    padding-bottom: 15px;
-
     .image {
       height: 140px;
     }
   }
 
   @include media("<=xsmall") {
-    padding-bottom: 15px;
-
     .image {
       height: 160px;
     }

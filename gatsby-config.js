@@ -36,5 +36,6 @@ module.exports = {
     keywords:
       "full stack engineer,software engineer, developer, portfolio",
     url: "https://shrirambalaji.dev",
+    blog: "https://blog.shrirambalaji.dev"
   },
 };
