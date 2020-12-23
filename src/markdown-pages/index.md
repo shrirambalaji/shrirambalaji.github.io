@@ -12,7 +12,7 @@ experience:
 
 about:
   bio:
-    - Software Engineer
+    - Developer
     - Open Sourcerer
     - Tech Enthusiast
 
@@ -22,14 +22,35 @@ about:
     - 🤖
 
 projects:
-  - title: Afternotes
-    duration: 2017
-    description: A platform that helps Engineering students in India study better by curating resources from the web.
-    link: https://play.google.com/store/apps/details?id=com.centauri.thinkstr.afternotes
-    name: afternotes
+  - title: Excalidraw
+    description: A virtual whiteboard for sketching hand-drawn like diagrams built by some core members of the React team.
+    link: https://github.com/excalidraw
+    name: excalidraw
     tags:
-      - android
-      - java
+      - oss
+
+  - title: Rollup.js
+    description: ​Helped migrate some legacy plugins to rollup.js module bundler monorepo
+    link: https://github.com/rollup/plugins/commit/e3e1ebd89d6c300a193223fb79a7a1dc9a0a9622
+    name: rollup
+    tags:
+      - oss
+
+  - title: Advent of Code in Rust
+    duration: 2020
+    description: My solutions for Advent of Code 2020 while learning Rust.
+    link: https://github.com/Shriram-Balaji/rust-advent-of-2020
+    name: Advent of Code
+    tags:
+      - rust
+
+  - title: Hex-Rgb
+    duration: 2020
+    description: A Rust CLI Program to convert hexadecimal color-code to RGB
+    link: https://github.com/Shriram-Balaji/cli-hex-rgb
+    name: hex-rgb
+    tags:
+      - rust
 
   - title: Cast Bucket
     duration: 2019
@@ -51,14 +72,6 @@ projects:
       - golang
       - security
 
-  - title: Domain Hunt
-    duration: 2018
-    description: A command-line interace to search for domain names.
-    link: https://www.npmjs.com/package/cli-domain-hunt
-    name: domain-hunt
-    tags:
-      - node.js
-
   - title: Man-made
     duration: 2018
     description: A command-line interace to generate man pages for globally installed node modules.
@@ -67,33 +80,11 @@ projects:
     tags:
       - node.js
 
-  - title: Pymobile-analytics
+  - title: Afternotes
     duration: 2017
-    description: A simple sentimental analysis project for aggregating and analysing consumer reviews for popular automobile brands.
-    link: https://github.com/shriram-balaji/pymobile-analytics
-    name: pymobile-analytics
+    description: A platform that helps Engineering students in India study better by curating resources from the web.
+    link: https://play.google.com/store/apps/details?id=com.centauri.thinkstr.afternotes
+    name: afternotes
     tags:
-      - python
-
-oss:
-  - title: Excalidraw
-    description: A virtual whiteboard for sketching hand-drawn like diagrams built by some core members of the React team. Core collaborator for the Excalidraw-Desktop App as well.
-    link: https://github.com/excalidraw
-    name: excalidraw
-    tags:
-      - oss
-
-  - title: Rollup.js
-    description: ​Helped migrate some legacy plugins to rollup.js module bundler monorepo.
-    link: https://github.com/rollup/plugins/commit/e3e1ebd89d6c300a193223fb79a7a1dc9a0a9622
-    name: rollup
-    tags:
-      - oss
-
-  - title: Widdershins
-    description: OpenAPI to Markdown converter. Fixed bugs for JSX compatibility.
-    link: https://github.com/mermade/widdershins
-    name: widdershins
-    tags:
-      - oss
----
+      - android
+      - java

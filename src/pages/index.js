@@ -1,7 +1,6 @@
 import React from "react";
 import ExperienceList from "../components/ExperienceList";
 import ProjectsList from "../components/ProjectsList";
-import OssList from "../components/OssList";
 import About from "../components/Sidebar/About";
 import Links from "../components/Sidebar/Links";
 import Layout from "../components/layout";
@@ -31,10 +30,10 @@ const App = (props) => (
           </div>
         </h2>
         <h4 className="bold summary">
-          Software Engineer building tools for humans.
+          Software Engineer dabbling with things on
+          the interwebs.
         </h4>
         <ExperienceList />
-        <OssList />
         <ProjectsList />
       </div>
 

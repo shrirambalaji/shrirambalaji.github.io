@@ -5,7 +5,7 @@ import SectionItem from "../SectionItem";
 
 const ProjectsList = () => {
   return (
-    <Section title="Projects">
+    <Section title="Projects & Open Source">
       <div className="row">
         <StaticQuery
           query={graphql`
