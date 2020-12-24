@@ -18,14 +18,14 @@
   flex-direction: row;
   gap: 20px;
   padding-left: 0px !important;
-  transition: transform 0.2s ease, border-bottom 0.2s ease;
+  border: 1px solid transparent;
+  transition: transform 0.2s ease, border 0.4s ease;
 
   &:hover,
   &:active {
     cursor: pointer;
-    transform: translateY(-5px);
-    background: $card-bg-hover-color;
-    // border: 2px solid $accent;
+    transform: translateY(-2px);
+    border: 1px solid $accent;
   }
 
   .post__image {
@@ -88,4 +88,11 @@
 .post-link {
   text-decoration: none;
   color: $primary-text-color;
+}
+
+.post-link,
+.post-link:active,
+.post-link:focus,
+.post-link:focus-visible {
+  outline: none; /* Works in Firefox, Chrome, IE8 and above */
 }

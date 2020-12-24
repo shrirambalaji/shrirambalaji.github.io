@@ -1,9 +1,6 @@
 import React from "react";
 import "./style.scss";
 
-const redirectTo = (link) =>
-  window ? window.open(link, "_blank") : null;
-
 const SectionItem = ({
   title,
   timeperiod,
@@ -14,12 +11,14 @@ const SectionItem = ({
     <div
       role="presentation"
       className="card section-item col-md"
-      onClick={() => redirectTo(link)}
-      onKeyDown={() => redirectTo(link)}
     >
-      <div className="title bold">{title}</div>
-      <p className="duration">{timeperiod}</p>
-      <p className="content">{content}</p>
+      <a href={link} target="_blank" rel="noreferrer" className="card-link">
+        <div className="card-content">
+          <div className="title bold">{title}</div>
+          <p className="duration">{timeperiod}</p>
+          <p className="content">{content}</p>
+        </div>
+      </a>
     </div>
   );
 };
