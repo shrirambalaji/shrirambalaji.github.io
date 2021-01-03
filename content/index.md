@@ -39,7 +39,7 @@ projects:
   - title: Advent of Code in Rust
     duration: 2020
     description: My solutions for Advent of Code 2020 while learning Rust.
-    link: https://github.com/Shriram-Balaji/rust-advent-of-2020
+    link: https://github.com/Shriram-Balaji/rust-advent-of-code-2020
     name: Advent of Code
     tags:
       - rust
