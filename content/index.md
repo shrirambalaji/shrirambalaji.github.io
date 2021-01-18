@@ -1,13 +1,18 @@
 ---
 experience:
+  - company: Microsoft
+    duration: Jan 2021 - Present
+    description: Working on Microsoft 365 Productivity Suite to deliver highly scalable products and to provide the best user experiences across all applications in the suite.
+    link: https://microsoft.com
+
   - company: NetApp
-    duration: Oct 2018 - Present
-    description: Built Docgen, a novel documentation orchestrator to publish a Gatsby Static Documentation Site for NetApp APIs with a CLI interface. Also built and optimized web applications, microservices tailored towards designing and sizing NetApp Storage Solutions.
+    duration: Oct 2018 - Jan 2021
+    description: Built Docgen - a novel documentation orchestrator for NetApp's ActiveIQ API Reference. Built internal web applications & microservices for sizing NetApp Storage Solutions.
     link: https://netapp.com
 
   - company: Cisco
     duration: June 2017 - Oct 2018
-    description: Built scalable microservice architectures and reliable Message Queueing Systems as part of the Engineering Team in Team-One a cloud based messaging tool, now part of WebEx.
+    description: Built scalable microservice backend architectures and reliable Message Queueing Systems for Team-One, a cloud based messaging tool which is now part of WebEx.
     link: https://cisco.com
 
 about:
