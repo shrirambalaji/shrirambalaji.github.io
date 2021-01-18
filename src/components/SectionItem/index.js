@@ -10,7 +10,7 @@ const SectionItem = ({
   return (
     <div
       role="presentation"
-      className="card section-item col-md"
+      className="card section-item col-md-3"
     >
       <a href={link} target="_blank" rel="noreferrer" className="card-link">
         <div className="card-content">
