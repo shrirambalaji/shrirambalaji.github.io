@@ -34,6 +34,7 @@ const Experience = () => {
               {experienceContents.map(
                 ({ company, description, duration, link }, index) => (
                   <SectionItem
+
                     key={index}
                     type="experience"
                     link={link}

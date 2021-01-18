@@ -35,9 +35,19 @@ const Projects = () => {
 
             const { projects } = frontmatter;
             return projects.map(
-              ({ title, description, duration, tags, link }, index) => {
+              (
+                {
+                  title,
+                  description,
+                  duration,
+                  tags,
+                  link,
+                },
+                index
+              ) => {
                 return (
                   <SectionItem
+                    small={true}
                     key={index}
                     type="project"
                     title={title}
