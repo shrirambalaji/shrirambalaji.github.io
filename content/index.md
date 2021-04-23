@@ -104,6 +104,6 @@ links:
 - type: twitter
   url: https://twitter.com/__shriram
 - type: mail
-  url: mailto:shrirambalaji1996@gmail.com
+  url: mailto:hello@shrirambalaji.dev
 - type: resume
   url: /files/resume.pdf
