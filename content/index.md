@@ -44,7 +44,7 @@ projects:
   - title: Advent of Code in Rust
     duration: 2020
     description: My solutions for Advent of Code 2020 while learning Rust.
-    link: https://github.com/Shriram-Balaji/rust-advent-of-code-2020
+    link: https://github.com/shrirambalaji/rust-advent-of-code-2020
     name: Advent of Code
     tags:
       - rust
@@ -52,7 +52,7 @@ projects:
   - title: Hex-Rgb
     duration: 2020
     description: A Rust CLI Program to convert hexadecimal color-code to RGB
-    link: https://github.com/Shriram-Balaji/cli-hex-rgb
+    link: https://github.com/shrirambalaji/cli-hex-rgb
     name: hex-rgb
     tags:
       - rust
@@ -98,11 +98,11 @@ links:
 - type: blog
   url: https://blog.shrirambalaji.dev
 - type: github
-  url: https://github.com/Shriram-Balaji
+  url: https://github.com/shrirambalaji
 - type: linkedin
   url: https://linkedin.com/in/shrirambalaji
 - type: twitter
-  url: https://twitter.com/__shriram
+  url: https://twitter.com/shrirambalaji
 - type: mail
   url: mailto:hello@shrirambalaji.dev
 - type: resume

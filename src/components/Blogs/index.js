@@ -6,7 +6,7 @@ const HASHNODE_API = "https://api.hashnode.com";
 const BLOG_URL = "https://blog.shrirambalaji.dev";
 const query = `
     {
-      user(username: "shriram-balaji") {
+      user(username: "shrirambalaji") {
         publication {
           posts{
             slug
