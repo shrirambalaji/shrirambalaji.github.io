@@ -55,6 +55,12 @@
     color: $secondary-text-color;
   }
 
+  @include media(">=large") {
+    .post__image {
+      background-size: cover;
+    }
+  }
+
   @include media(">=medium") {
     margin-right: 20px;
     min-width: 430px;
@@ -80,7 +86,6 @@
       border-top-right-radius: 6px;
       border-bottom-left-radius: 0px;
       width: 100%;
-      background-size: cover;
     }
   }
 }
