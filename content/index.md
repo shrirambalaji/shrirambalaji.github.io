@@ -34,6 +34,20 @@ projects:
     tags:
       - oss
 
+  - title: Reactjs.org
+    description: The react documentation site. Fixed some minor issues for the upcoming site.
+    link: https://beta.reactjs.org/
+    name: reactjs.org
+    tags:
+      - oss
+
+  - title: WRY
+    description: Cross-platform WebView rendering library in Rust that supports all major desktop platforms like Windows, macOS, and Linux.
+    link: https://github.com/tauri-apps/wry
+    name: tauri/wry
+    tags:
+      - oss
+
   - title: Rollup.js
     description: ​Helped migrate some legacy plugins to rollup.js module bundler monorepo
     link: https://github.com/rollup/plugins/commit/e3e1ebd89d6c300a193223fb79a7a1dc9a0a9622
@@ -59,7 +73,7 @@ projects:
 
   - title: Cast Bucket
     duration: 2019
-    description: A Universal React Native Experiment as a podcast app for developers.
+    description: A podcast app for developers built as a Universal React Native Experiment.
     link: https://github.com/cast-bucket/cast-bucket
     name: cast-bucket
     wip: true
@@ -76,14 +90,6 @@ projects:
     tags:
       - golang
       - security
-
-  - title: Man-made
-    duration: 2018
-    description: A command-line interace to generate man pages for globally installed node modules.
-    link: https://www.npmjs.com/package/man-made
-    name: man-made
-    tags:
-      - node.js
 
   - title: Afternotes
     duration: 2017
