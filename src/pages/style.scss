@@ -2,9 +2,9 @@
 
 $vertical-padding: 50px;
 $horizontal-padding: 64px;
-$main-width: 75%;
-$main-margin-right: 25%;
-$aside-width: 35%;
+$main-width: 70%;
+$main-margin-right: 30%;
+$aside-width: 30%;
 
 .intro {
   line-height: 1.5em;
@@ -37,8 +37,6 @@ $aside-width: 35%;
 
   // Setting the width andpadding sizes
   @include media(">=large") {
-    $main-width: 75%;
-    $main-margin-right: 25%;
     $vertical-padding: 50px;
     $horizontal-padding: 2.5%;
 
