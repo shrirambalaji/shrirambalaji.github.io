@@ -12,7 +12,7 @@ const SectionItem = ({
     <div
       role="presentation"
       className={`card section-item ${
-        small ? "col-width-small col-md-3" : "col-md"
+        small ? "col-width-small col-md" : "col-lg col-md-12"
       }`}
     >
       <a

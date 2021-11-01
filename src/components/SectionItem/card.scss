@@ -1,10 +1,9 @@
 .card {
-  width: 100vw;
   border-radius: 6px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   background: $card-bg-color;
   border: 1px solid transparent;
-  transition: transform 0.2s ease, border 0.4s ease;
+  transition: transform 0.2s ease, border 0.2s ease;
 
   &:hover,
   &:active {
@@ -32,13 +31,12 @@
   }
 
   @include media(">=medium") {
-    margin-right: 15px;
-    min-width: 295px !important;
+    margin-right: 10px;
   }
 }
 
 .col-width-small {
   @include media(">=medium") {
-    min-width: 333px;
+    min-width: 300px;
   }
 }
