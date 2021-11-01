@@ -17,6 +17,26 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  ::-webkit-scrollbar {
+    width: auto;
+    height: auto;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: $dark-theme-bg-color;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: $dark-theme-selection-bg-color;
+  }
+
+  ::-webkit-scrollbar-corner,
+  ::-webkit-resizer {
+    background-color: $dark-theme-bg-color;
+  }
+
+  scrollbar-color: $dark-theme-selection-bg-color $dark-theme-bg-color;
 }
 
 body {
