@@ -22,22 +22,11 @@ const query = `
 const Post = ({ post, url }) => {
   return (
     <a className="post-link" href={url}>
-      <div
-        role="presentation"
-        className="post section-item col-md"
-      >
-        <div
-          className="post__image"
-          style={{
-            backgroundImage: `url(${post.coverImage})`,
-          }}
-          alt={post.title}
-        />
+      <div role="presentation" className="post section-item col-md">
+        <img className="post__image" alt={post.title} src={post.coverImage} />
         <div className="post__text">
           <h2 className="post__text-title">{post.title}</h2>
-          <p className="post__text-description">
-            {post.brief}
-          </p>
+          <p className="post__text-description">{post.brief}</p>
         </div>
       </div>
     </a>
@@ -78,21 +67,14 @@ class Blogs extends React.Component {
     if (this.state.loading || this.state.posts.length === 0)
       return (
         <div className="spinner">
-          <Grid
-            fill="hsl(237.4, 18.7%, 18%)"
-            trokeOpacity=".125"
-          />
+          <Grid fill="hsl(237.4, 18.7%, 18%)" trokeOpacity=".125" />
         </div>
       );
 
     return (
       <Section title="Latest Blogs" className="blogs">
         {this.state.posts.map((post, index) => (
-          <Post
-            key={index}
-            post={post}
-            url={`${BLOG_URL}/${post.slug}`}
-          />
+          <Post key={index} post={post} url={`${BLOG_URL}/${post.slug}`} />
         ))}
       </Section>
     );
