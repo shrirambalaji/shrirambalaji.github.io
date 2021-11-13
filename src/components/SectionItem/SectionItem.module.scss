@@ -1,8 +1,7 @@
 @import "../../assets/scss/main.scss";
 @import "./card.scss";
-@import "./post.scss";
 
-.section-item {
+.sectionItem {
   .title {
     padding-top: 8px;
     font-size: 2.6rem;
@@ -37,4 +36,14 @@
       height: 160px;
     }
   }
+}
+
+.spinner {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.spinner svg {
+  width: 50px;
+  height: 50px;
 }

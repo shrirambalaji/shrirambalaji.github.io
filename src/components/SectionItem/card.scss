@@ -1,3 +1,4 @@
+// Card Styles
 .card {
   border-radius: 6px;
   margin-bottom: 10px;
@@ -12,21 +13,21 @@
     border: 1px solid $accent;
   }
 
-  .card-link {
+  .cardLink {
     text-decoration: none;
     color: currentColor;
     display: flex;
     height: 100%;
   }
 
-  .card-link,
-  .card-link:active,
-  .card-link:focus,
-  .card-link:focus-visible {
+  .cardLink,
+  .cardLink:active,
+  .cardLink:focus,
+  .cardLink:focus-visible {
     outline: none; /* Works in Firefox, Chrome, IE8 and above */
   }
 
-  .card-link .card-content {
+  .cardLink .cardContent {
     padding: 15px;
   }
 
@@ -35,8 +36,9 @@
   }
 }
 
-.col-width-small {
+.smallCard {
   @include media(">=medium") {
     min-width: 300px;
   }
 }
+

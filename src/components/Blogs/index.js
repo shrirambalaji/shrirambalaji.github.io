@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "svg-loaders-react";
 import Section from "../Section";
-
+import Post from "./Post";
 const HASHNODE_API = "https://api.hashnode.com";
 const BLOG_URL = "https://blog.shrirambalaji.dev";
 const query = `
@@ -18,20 +18,6 @@ const query = `
       }
     }
   `;
-
-const Post = ({ post, url }) => {
-  return (
-    <a className="post-link" href={url}>
-      <div role="presentation" className="post section-item col-md">
-        <img className="post__image" alt={post.title} src={post.coverImage} />
-        <div className="post__text">
-          <h2 className="post__text-title">{post.title}</h2>
-          <p className="post__text-description">{post.brief}</p>
-        </div>
-      </div>
-    </a>
-  );
-};
 
 class Blogs extends React.Component {
   state = {

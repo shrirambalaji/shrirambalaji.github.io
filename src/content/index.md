@@ -113,3 +113,12 @@ links:
   url: mailto:hello@shrirambalaji.dev
 - type: resume
   url: /files/resume.pdf
+
+siteMetadata:
+  title: Shriram Balaji
+  firstName: Shriram
+  lastName: Balaji
+  description: Software Engineer dabbling with things on the interwebs
+  keywords: full stack engineer,software engineer, developer, portfolio
+  url: https://shrirambalaji.dev
+  blog: https://blog.shrirambalaji.dev

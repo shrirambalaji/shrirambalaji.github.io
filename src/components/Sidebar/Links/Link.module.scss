@@ -5,13 +5,13 @@
   color: $grey-color;
   padding-top: 20px;
 
-  ul.icons-list {
+  ul.socialMediaIcons {
     padding: 0;
     margin: 0;
     list-style: none;
     padding-bottom: 10px;
 
-    li.icon {
+    li.socialMediaIcon {
       display: inline-block;
       padding-right: 18px;
 
@@ -20,7 +20,7 @@
       }
     }
 
-    li.icon svg {
+    li.socialMediaIcon svg {
       width: 24px;
       height: 24px;
     }

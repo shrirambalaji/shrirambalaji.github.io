@@ -1,12 +1,12 @@
 import React from "react";
 
-import "./style.scss";
+import styles from "./Section.module.scss";
 
 const Section = ({ title, children }) => {
   return (
-    <div className="section">
-      <h5 className="bold section-title">{title}</h5>
-      <div className="section-units">{children}</div>
+    <div className={styles.section}>
+      <h5 className={`bold ${styles.sectionTitle}`}>{title}</h5>
+      <div className={styles.sectionUnits}>{children}</div>
     </div>
   );
 };
