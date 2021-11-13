@@ -147,7 +147,7 @@ h6 {
   // Setting the width andpadding sizes
   @include media(">=large") {
     $vertical-padding: 50px;
-    $horizontal-padding: 1.75%;
+    $horizontal-padding: 2.75%;
 
     width: $main-width;
     margin-right: $main-margin-right;
@@ -209,6 +209,7 @@ h6 {
 
     .bottom {
       width: 100%;
+      margin-bottom: 20px;
     }
   }
 
@@ -231,7 +232,7 @@ h6 {
   @include media(">=medium") {
     $aside-width: 25%;
     $vertical-padding: 25px;
-    $horizontal-padding: 20px;
+    $horizontal-padding: 0px;
 
     width: $aside-width;
     padding: $vertical-padding $horizontal-padding $vertical-padding

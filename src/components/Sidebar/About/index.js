@@ -1,13 +1,13 @@
 import emojiSupport from "detect-emoji-support";
 import React, { Fragment } from "react";
-import "./About.module.scss";
+import styles from "./About.module.scss";
 
 const About = ({ content: about }) => {
   const { emojis, bio } = about;
   return (
-    <div className="about">
-      <div className="image"></div>
-      <div className="bio">
+    <div className={styles.about}>
+      <div className={styles.image}></div>
+      <div className={styles.bio}>
         <div>
           <Fragment>
             <p>{bio.join(" ∙ ")}</p>
@@ -15,8 +15,8 @@ const About = ({ content: about }) => {
               emojis.map((emoji, emojiIdx) => (
                 <span
                   key={emojiIdx}
-                  className="emoji"
-                  role="img"
+                  className={styles.emoji}
+                  rol={styles.img}
                   aria-label="sidelink-emoji"
                 >
                   &nbsp;{emoji}&nbsp;

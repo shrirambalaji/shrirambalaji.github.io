@@ -127,7 +127,6 @@ const Link = ({ url, type }) => (
 );
 
 const Links = ({ content: links }) => {
-  console.log(styles)
   return (
     <div className={styles.links}>
       <ul className={styles.socialMediaIcons}>
