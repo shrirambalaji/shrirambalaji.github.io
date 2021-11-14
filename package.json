@@ -10,9 +10,9 @@
     "start": "next dev",
     "develop": "next dev",
     "clean": "next clean",
-    "build": "next build",
+    "build": "next build && next export",
     "serve": "next serve",
-    "deploy": "next build --prefix-paths && gh-pages -b main -d public"
+    "deploy": "rm -rf node_modules/.cache && yarn build && touch out/.nojekyll && gh-pages -b main -d out"
   },
   "dependencies": {
     "detect-emoji-support": "^0.1.7",
