@@ -35,7 +35,7 @@ projects:
       - oss
 
   - title: Reactjs.org
-    description: The react documentation site. Fixed some minor issues for the upcoming site.
+    description: The new React documentation website. Contributed to some minor bugfixes.
     link: https://beta.reactjs.org/
     name: reactjs.org
     tags:
