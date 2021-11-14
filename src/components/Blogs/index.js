@@ -1,6 +1,6 @@
 import React from "react";
-import { Grid } from "svg-loaders-react";
 import Section from "../Section";
+import Spinner from "../Spinner";
 import Post from "./Post";
 const HASHNODE_API = "https://api.hashnode.com";
 const BLOG_URL = "https://blog.shrirambalaji.dev";
@@ -50,12 +50,7 @@ class Blogs extends React.Component {
   };
 
   render() {
-    if (this.state.loading || this.state.posts.length === 0)
-      return (
-        <div className="spinner">
-          <Grid fill="hsl(237.4, 18.7%, 18%)" trokeOpacity=".125" />
-        </div>
-      );
+    if (this.state.loading || this.state.posts.length === 0) return <Spinner />;
 
     return (
       <Section title="Latest Blogs" className="blogs">
