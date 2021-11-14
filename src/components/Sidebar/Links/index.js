@@ -10,7 +10,7 @@ const LinkIcon = ({ type }) => {
           focusable="false"
           data-prefix="fas"
           data-icon="blog"
-          class="svg-inline--fa fa-blog fa-w-16"
+          className="svg-inline--fa fa-blog fa-w-16"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
@@ -28,7 +28,7 @@ const LinkIcon = ({ type }) => {
           focusable="false"
           data-prefix="fab"
           data-icon="github"
-          class="svg-inline--fa fa-github fa-w-16"
+          className="svg-inline--fa fa-github fa-w-16"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 496 512"
@@ -46,7 +46,7 @@ const LinkIcon = ({ type }) => {
           focusable="false"
           data-prefix="fab"
           data-icon="linkedin"
-          class="svg-inline--fa fa-linkedin fa-w-14"
+          className="svg-inline--fa fa-linkedin fa-w-14"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
@@ -64,7 +64,7 @@ const LinkIcon = ({ type }) => {
           focusable="false"
           data-prefix="fab"
           data-icon="twitter"
-          class="svg-inline--fa fa-twitter fa-w-16"
+          className="svg-inline--fa fa-twitter fa-w-16"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
@@ -82,7 +82,7 @@ const LinkIcon = ({ type }) => {
           focusable="false"
           data-prefix="fas"
           data-icon="envelope"
-          class="svg-inline--fa fa-envelope fa-w-16"
+          className="svg-inline--fa fa-envelope fa-w-16"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
@@ -104,7 +104,7 @@ const LinkIcon = ({ type }) => {
           focusable="false"
           data-prefix="fas"
           data-icon="file-pdf"
-          class="svg-inline--fa fa-file-pdf fa-w-12"
+          className="svg-inline--fa fa-file-pdf fa-w-12"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 384 512"
@@ -132,7 +132,7 @@ const Links = ({ content: links }) => {
       <ul className={styles.socialMediaIcons}>
         {links.map(({ type, url }) => {
           return (
-            <li className={styles.socialMediaIcon}>
+            <li className={styles.socialMediaIcon} key={url}>
               <Link type={type} url={url} />
             </li>
           );
