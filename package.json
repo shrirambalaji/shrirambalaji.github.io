@@ -12,7 +12,7 @@
     "clean": "next clean",
     "build": "next build && next export",
     "serve": "next serve",
-    "deploy": "rm -rf node_modules/.cache && yarn build && touch out/.nojekyll && gh-pages -b main -d out"
+    "deploy": "rm -rf node_modules/.cache && yarn build && touch out/.nojekyll && gh-pages -b main -d out -t true"
   },
   "dependencies": {
     "detect-emoji-support": "^0.1.7",
