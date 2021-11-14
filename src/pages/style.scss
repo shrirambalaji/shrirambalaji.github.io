@@ -231,7 +231,7 @@ h6 {
 
   @include media(">=medium") {
     $aside-width: 25%;
-    $vertical-padding: 25px;
+    $vertical-padding: 0px;
     $horizontal-padding: 0px;
 
     width: $aside-width;

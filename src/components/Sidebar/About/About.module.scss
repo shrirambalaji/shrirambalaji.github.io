@@ -5,21 +5,12 @@ $margin-bottom: 40px;
 $margin-top: 40px;
 
 .about {
+  padding: 50px 0px;
   color: $grey-color-light;
 
   .image {
-    width: 150px;
-    height: 150px;
     margin: 0 auto;
-    max-width: $max-width;
-    background-size: cover;
-    background-color: #f7f5e3;
-    background-image: url(../../../assets/images/avatar.jpg);
-    background-repeat: no-repeat;
-    background-position: 0px 20px;
     border-radius: 50%;
-    border: 2px solid $dark-theme-bg-color;
-    overflow: hidden;
   }
 
   .bio {
