@@ -58,7 +58,9 @@ typings/
 .env
 
 .DS_Store
-.cache/
+
 .vscode/
-public
+
 yarn-error.log
+.next
+out

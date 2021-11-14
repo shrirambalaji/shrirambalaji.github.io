@@ -1,13 +1,4 @@
-.spinner {
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-.spinner svg {
-  width: 50px;
-  height: 50px;
-}
-
+@import "../../assets/scss/main.scss";
 .post {
   border-radius: 6px;
   margin-bottom: 20px;
@@ -26,7 +17,7 @@
     border: 1px solid $accent;
   }
 
-  .post__image {
+  .postImage {
     background-color: $dark-theme-selection-bg-color;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
@@ -35,12 +26,12 @@
     object-fit: contain;
   }
 
-  .post__text {
+  .postContent {
     padding: 1em;
     line-height: 1.75em;
   }
 
-  .post__text .post__text-title {
+  .postContent .postTitle {
     font-size: 2.25rem;
     font-weight: 600;
     line-height: 1.75em;
@@ -48,13 +39,13 @@
     letter-spacing: 0px;
   }
 
-  .post__text .post__text-description {
+  .postContent .postDescription {
     color: $secondary-text-color;
     line-height: 2em;
   }
 
   @include media(">large") {
-    .post__image {
+    .postImage {
       width: 400px;
       height: auto;
     }
@@ -76,7 +67,7 @@
       width: 100%;
     }
     
-    .post__image {
+    .postImage {
       border-top-right-radius: 6px;
       border-bottom-left-radius: 0px;
       height: 100%;
@@ -86,11 +77,11 @@
   @include media("<=small") {
     flex-direction: column;
 
-    .post__text {
+    .postContent {
       padding: 0px 25px;
     }
 
-    .post__image {
+    .postImage {
       border-top-right-radius: 6px;
       border-bottom-left-radius: 0px;
       height: 100%;
@@ -98,14 +89,14 @@
   }
 }
 
-.post-link {
+.postLink {
   text-decoration: none;
   color: $primary-text-color;
 }
 
-.post-link,
-.post-link:active,
-.post-link:focus,
-.post-link:focus-visible {
+.postLink,
+.postLink:active,
+.postLink:focus,
+.postLink:focus-visible {
   outline: none; /* Works in Firefox, Chrome, IE8 and above */
 }

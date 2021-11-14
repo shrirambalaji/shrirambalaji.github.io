@@ -1,6 +1,5 @@
 import React from "react";
-import { graphql, StaticQuery } from "gatsby";
-import "./style.scss";
+import styles from "./Link.module.scss";
 
 const LinkIcon = ({ type }) => {
   switch (type) {
@@ -11,7 +10,7 @@ const LinkIcon = ({ type }) => {
           focusable="false"
           data-prefix="fas"
           data-icon="blog"
-          class="svg-inline--fa fa-blog fa-w-16"
+          className="svg-inline--fa fa-blog fa-w-16"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
@@ -29,7 +28,7 @@ const LinkIcon = ({ type }) => {
           focusable="false"
           data-prefix="fab"
           data-icon="github"
-          class="svg-inline--fa fa-github fa-w-16"
+          className="svg-inline--fa fa-github fa-w-16"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 496 512"
@@ -47,7 +46,7 @@ const LinkIcon = ({ type }) => {
           focusable="false"
           data-prefix="fab"
           data-icon="linkedin"
-          class="svg-inline--fa fa-linkedin fa-w-14"
+          className="svg-inline--fa fa-linkedin fa-w-14"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
@@ -65,7 +64,7 @@ const LinkIcon = ({ type }) => {
           focusable="false"
           data-prefix="fab"
           data-icon="twitter"
-          class="svg-inline--fa fa-twitter fa-w-16"
+          className="svg-inline--fa fa-twitter fa-w-16"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
@@ -83,7 +82,7 @@ const LinkIcon = ({ type }) => {
           focusable="false"
           data-prefix="fas"
           data-icon="envelope"
-          class="svg-inline--fa fa-envelope fa-w-16"
+          className="svg-inline--fa fa-envelope fa-w-16"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
@@ -105,7 +104,7 @@ const LinkIcon = ({ type }) => {
           focusable="false"
           data-prefix="fas"
           data-icon="file-pdf"
-          class="svg-inline--fa fa-file-pdf fa-w-12"
+          className="svg-inline--fa fa-file-pdf fa-w-12"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 384 512"
@@ -127,50 +126,31 @@ const Link = ({ url, type }) => (
   </a>
 );
 
-const Links = () => {
+const Links = ({ content: links }) => {
   return (
-    <StaticQuery
-      query={graphql`
-        query Links {
-          markdownRemark {
-            frontmatter {
-              links {
-                url
-                type
-              }
-            }
-          }
-        }
-      `}
-      render={(data) => {
-        const { links } = data.markdownRemark.frontmatter;
-        return (
-          <div className="links">
-            <ul className="icons-list">
-              {links.map(({ type, url }) => {
-                return (
-                  <li className="icon">
-                    <Link type={type} url={url} />
-                  </li>
-                );
-              })}
-            </ul>
-            <div className="small bold">
-              <p>
-                Built&nbsp;with&nbsp;&#10084;&nbsp;using&nbsp;
-                <a
-                  href="https://www.gatsbyjs.org/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GatsbyJS
-                </a>
-              </p>
-            </div>
-          </div>
-        );
-      }}
-    />
+    <div className={styles.links}>
+      <ul className={styles.socialMediaIcons}>
+        {links.map(({ type, url }) => {
+          return (
+            <li className={styles.socialMediaIcon} key={url}>
+              <Link type={type} url={url} />
+            </li>
+          );
+        })}
+      </ul>
+      <div className="small">
+        <p>
+          Built&nbsp;with&nbsp;&#10084;&nbsp;using&nbsp;
+          <a
+            href="https://www.nextjs.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Next.js
+          </a>
+        </p>
+      </div>
+    </div>
   );
 };
 

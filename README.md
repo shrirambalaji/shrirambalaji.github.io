@@ -1,3 +1,3 @@
 # Portfolio
 
-👨‍💻 Portfolio built using [GatsbyJS](https://gatsbyjs.org) and deployed to github-pages 
+👨‍💻 Portfolio built using [nextjs](https://nextjs.org) and deployed to github-pages 

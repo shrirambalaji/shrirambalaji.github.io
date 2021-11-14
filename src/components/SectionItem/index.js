@@ -1,30 +1,24 @@
 import React from "react";
-import "./style.scss";
+import styles from "./SectionItem.module.scss";
 
-const SectionItem = ({
-  title,
-  timeperiod,
-  content,
-  link,
-  small,
-}) => {
+const SectionItem = ({ title, timeperiod, content, link, small }) => {
   return (
     <div
       role="presentation"
-      className={`card section-item ${
-        small ? "col-width-small col-md" : "col-lg col-md-12"
+      className={`${styles.card} ${styles.sectionItem} ${
+        small ? `${styles.smallCard} col-md` : "col-lg col-md-12"
       }`}
     >
       <a
         href={link}
         target="_blank"
         rel="noreferrer"
-        className="card-link"
+        className={`${styles["cardLink"]}`}
       >
-        <div className="card-content">
-          <div className="title bold">{title}</div>
-          <p className="duration">{timeperiod}</p>
-          <p className="content">{content}</p>
+        <div className={`${styles["cardContent"]}`}>
+          <div className={`${styles.title} bold`}>{title}</div>
+          <p className={styles.duration}>{timeperiod}</p>
+          <p className={styles.content}>{content}</p>
         </div>
       </a>
     </div>

@@ -35,7 +35,7 @@ projects:
       - oss
 
   - title: Reactjs.org
-    description: The react documentation site. Fixed some minor issues for the upcoming site.
+    description: The new React documentation website. Contributed to some minor bugfixes.
     link: https://beta.reactjs.org/
     name: reactjs.org
     tags:
@@ -113,3 +113,12 @@ links:
   url: mailto:hello@shrirambalaji.dev
 - type: resume
   url: /files/resume.pdf
+
+siteMetadata:
+  title: Shriram Balaji
+  firstName: Shriram
+  lastName: Balaji
+  description: Software Engineer dabbling with things on the interwebs
+  keywords: full stack engineer,software engineer, developer, portfolio
+  url: https://shrirambalaji.dev
+  blog: https://blog.shrirambalaji.dev
