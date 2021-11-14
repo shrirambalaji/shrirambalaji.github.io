@@ -63,3 +63,4 @@ typings/
 
 yarn-error.log
 .next
+out
