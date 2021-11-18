@@ -1,5 +1,6 @@
 {
   "name": "personal-portfolio",
+  "version": "2.0.0",
   "description": "Shriram Balaji's Personal Portfolio",
   "repository": {
     "type": "git",
