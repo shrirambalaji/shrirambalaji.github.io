@@ -20,7 +20,6 @@ export default ({ siteMetadata, children }) => {
           keywords={siteMetadata.keywords}
         />
         <meta property="og:url" content={siteMetadata.url} />
-        <meta prooerty="og:image" content={profileImage} />
         <meta prooerty="og:title" content={siteMetadata.title} />
         <meta property="og:description" content={siteMetadata.description} />
         <link
